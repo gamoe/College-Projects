@@ -1,0 +1,2 @@
+Rui Santos;12840;dermatologista;rui@iscte-iul.pt;4;8;100
+Nelson Freitas;34567;dermatologista;nelson@iscte-iul.pt;2;7;250

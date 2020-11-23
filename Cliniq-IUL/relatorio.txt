@@ -1,0 +1,44 @@
+Relatório SO - Shell Script
+
+1)./cria_pacientes.sh
+
+	No primeiro script optei por primeiro criar variáveis para os vários componentes que vão compor cada linha do ficheiro de texto de pacientes que se prentender criar neste script.
+No total criei 4: numero_registo, nome, email e saldo. Não adicionei a localidade e nºtelemóvel uma vez que são valores que nesta fase inicial ficarão vazios.
+Em cada variável extrai a informação requesitada do ficheiro de texto. Em seguida invoquei o comando "echo" onde irei arrumar a informação de acordo com as variáveis que criei e
+redireciona-las para o ficheiro de texto "pacientes.txt".
+	Tudo isto teve de ser acompanhado por um ciclo while. Para isso criei uma variável i=10 (uma vez que queremos 10 alunos no ficheiro) e acrescentar nas variáveis " tail -$i | head -1"
+uma vez que em cada ciclo while  que iremos repetir 10x, seja apenas recolhida informação referente apenas a um aluno de cada vez.
+	Por fim, para que sempre que este script seja executado, não repita os mesmo 10 alunos para o ficheiro de texto, foi criado um if para que caso o ficheiro pacientes.txt já exista,
+este seja eliminado e se crie um novo.
+
+2)./cria_medico.sh
+
+	No segundo script, como se trata de um script que lhe serão passados argumentos, comecei por defini-los: nome, numero_cedula, especialidade, email. Em seguida criei um echo 
+em que novamente iria arrumar a informação como queria e redireciona-la para o ficheiro de texto "medicos.txt". Porém, faltava ainda prevenir que o fosse possível realizar a criação do
+mesmo médico duas vezes. Para isso encontrei considerei os atributos "numero_cedula" e "email" como os atributos que distinguem os médicos. Dessa forma, para cada atributo criei uma 
+variável. Por exemplo, no caso do numero_cedula, nessa variável está o número de linhas do documento "medicos.txt" em aparece o número de cédula do médico do qual vou tentar registar
+da próxima vez que executar o script. Se o número de linhas for 0, significa que esse número de cédula não existe no ficheiro e portanto, mais nenhum médico foi registado com aquele número
+de cédula, o que significa que pode ser registado. O mesmo se aplica ao endereço de email.
+
+3)./stats.sh
+	
+	No terceiro script mais uma vez se trata de um script que passa argumentos então começei por definir os mesmos: Localidade e Saldo Mínimo.
+	Adotei o mesmo método do script anterior para o caso da localidade, contando o número de linhas. Para o caso do salário minimo dos Médicos, comecei por acumular numa variável
+o número de médicos (linhas) no ficheiro medicos.txt. Recorri a um ciclo while parecido ao que utilizei no primeiro script para analisar o ficheiro medicos.txt linha a linha e sempre 
+que encontrar uma linha com um saldo superior ao saldo minimo, incremento numa variavel "numero_medicos_com_saldo_superior"
+	Por fim, executo o "echo" para a consola com os valores requesitados.
+
+4)./avalia_medicos.sh
+
+	No quarto script realizei mais uma vez um ciclo while que irá analisar linha a linha o ficheiro "medicos.txt". Criei também duas variáveis que à medida que se percorre uma linha
+acumulas valores das consultados dos médicos e dos seus ratings. Em seguida realizado um if em que realizo as condições pedidas pelo enunciado. Se obedecerem as essas operações, acumulo numa
+variável a linha em específico e redireciono-a para um ficheiro de texto "lista_negra_medicos.txt".
+
+5)./menu.sh
+	
+	No quinto e último script foi pedido a realização de um menu em que fosse possível executar cada script criado nas alíneas anteriores. Para isso realizei um switch case e defini as 
+várias opções. Para o caso do '0', criei uma variável no inicio do script "quit=off". Em seguida fiz um ciclo while em que as opções todas do menu só iriam acontecer se esta variável fosse
+"off". Quando chega a opção 0, mudo a variável (quit=on) que para o ciclo. Caso se clique numa tecla que não as definidas, envia a mensagem "OPÇÃO INVÁLIDA".
+
+Gabriel Monteiro
+ETB-2, 92458
