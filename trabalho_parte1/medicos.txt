@@ -1,0 +1,28 @@
+Rui Santos;12840;dermatologista;rui@iscte-iul.pt;4;8;100
+Nelson Freitas;34567;dermatologista;nelson@iscte-iul.pt;2;7;250
+Gabriel Monteiro;12345;dentista;gabriel@iscte-iul.pt;8;3;900
+Joao Jonas;48295;dermatologista;a92458@iscte-iul.pt;8;2;0
+Gabriel Monteiro;14221;dentista;email@iscte-iul.pt;0;0;0
+Eusébio;12492;dermatologista;eusebio@gmail.com;0;0;0
+Yolanda;41936;pediatra;yolanda@gmail.com;0;0;0
+Hugo Mário;74193;hugomario@gmail.com;hugomario@gmail.com;0;0;0
+David;28593;dermatologista;david@gmail.com;0;0;0
+Hugo Alexandre;92585;dermatologista;hugoalexandre@gmail.com;0;0;0
+Leonor;22170;psiquiatra;leonordscarrasqueira@hotmail.com;0;0;0
+Josefino;84114;cardiologia;do;0;0;0
+Mario;12464;clinica geral;MarioZinho@gmail.com;0;0;0
+Paulo Borges;12834;dermatologista;pauloborges@gmail.com;0;0;0
+Humberto Diogo;51841;clinica geral;humberto@gmail.com;0;0;0
+Diogo Mamba;51844;clinica geral;humbertocarlos@gmail.com;0;0;0
+Hugo Nelson;12747;clinica geral;hugonelson@gmail.com;0;0;0
+Hugo Jones;12945;clinica geral;hugoJOunez@gmail.com;0;0;0
+Huguu Jonezz;81413;clinica geral;huguuujonez@gmail.com;0;0;0
+Gabriel Monteiro;77214;dermatologista;gabrielmonteiro@gmail.com;0;0;0
+Gabriel Zeca;12852;clinica geral;mimuard@gmail.com;0;0;0
+Kayle;12843;dermatologista;kayle@gmail.com;0;0;0
+Zezocasw;12321321;vssavsa;sadasdsa@gmail.com;0;0;0
+Doutor Zeca;123184;dermatologista;aossaom@gmail.com;0;0;0
+Paulinho;81469;clinica geral;paulinho@gmail.com;0;0;0
+Jeanine Sequeira;19484;dermatologista;jeanine@vasp.pt;0;0;0
+Carlos Caleia;156721;dermatologia;caleia@gmail.com;0;0;0
+Zeca Zeca;14214921;clinica geral;zezeca@gmail.com;0;0;0
