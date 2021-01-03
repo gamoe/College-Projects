@@ -1,0 +1,21 @@
+Relatório SO - C Language
+
+Neste parte do projeto foi realizado um sistema de Servidor e Consultas para a continuação do projeto "Cliniq-IUL" que tinha por base
+a comunicação por sinais entre processos.
+Comecei o projeto pela criação da classe Cliente, classe onde seria possível fazer a criação de um clinte com base no tipo de consulta
+que o usuário bem entendesse(1 a 3), numa respetiva descrição da consulta e um pid gerado automaticamente, que consiste no identificador de processo dessa determinada consulta.
+Após essa base inicial estar feita procedi ao começo do envio de sinais, começando com o SIGUSR1 (sinal que irá despoletar todo o nosso programa).
+Em seguida houve a necessidade de se passar à construção da classe Servidor, uma vez que tinha sido acabado de se enviar um sinal da classe Cliente
+e era necessário fazer o código necessário para armar e tratar o respetivo sinal. Assim desenvolvi a função trata_Sinal do Servidor,
+função que irá conter grande parte do código exigido no enunciado por parte do Servidor uma vez que este sinal inicial SIGUSR1, como dito anteriormente,
+é o sinal que impulsionar tudo o resto. Entretanto no respetivo trata sinal deste SIGUSR1 foram exigidos envios de outros sinais, que por
+sua vez foram armados e tratados na respetiva classe Cliente. 
+Em todos os trata_sinais que desenvolvi fiz recurso à espera passiva para não haver uma ocupança ridícula de percentagem de CPU, através
+de uma variável inteiro n. No início dos trata sinais essa variável passa a 1 e no final passa a 0. Na função main especifiquei que while (n==0) --> pause();
+Desta maneira a espera ativa evitar-se-à.
+
+Realizei todos os pontos do enunciado à exceção da alínea extra. 
+
+Gabriel Monteiro
+ETB-2 , 92458
+ 
